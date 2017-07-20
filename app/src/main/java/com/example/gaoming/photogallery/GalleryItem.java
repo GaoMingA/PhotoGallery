@@ -1,12 +1,17 @@
 package com.example.gaoming.photogallery;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by gsoft2-3 on 17-7-18.
  */
 
 public class GalleryItem {
+    @SerializedName("title")
     private String mCaption;
+    @SerializedName("id")
     private String mId;
+    @SerializedName("url_s")
     private String mUrl;
 
     @Override
@@ -37,4 +42,5 @@ public class GalleryItem {
     public void setUrl(String url) {
         mUrl = url;
     }
+
 }
